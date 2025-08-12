@@ -1,7 +1,7 @@
 cask "meetily" do
-  version "0.0.4"
-  sha256 "19646d7fae50be8990b4a4a9d3482ac3237fee1f2e6af0d8126498c8abc3bc55"
-  url "https://meetily.zackriya.com/dmg_darwin_arch64.zip"
+  version "0.0.5"
+  sha256 "084b4b492f243e8525088a26035421e93ebc98356f3a547d3611ed0db5070409"
+  url "https://github.com/Zackriya-Solutions/meeting-minutes/releases/download/test/dmg_test_0.0.5.zip"
   name "Meetily"
   desc "Meeting transcription and analysis application"
   homepage "https://github.com/Zackriya-Solutions/meeting-minutes"
@@ -10,7 +10,7 @@ cask "meetily" do
   depends_on macos: ">= :monterey"
   depends_on arch: :arm64
 
-  container nested: "dmg/meetily-frontend_0.0.4_aarch64.dmg"
+  container nested: "dmg/meetily-frontend_0.0.5_aarch64.dmg"
   
   app "meetily-frontend.app"
   

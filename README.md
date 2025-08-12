@@ -69,19 +69,16 @@ Install the Cask (The backend will be automatically installed.)
 # Install the frontend application (requires the tap from step 1)
 brew install --cask meetily
 ```
-
-After installation, you can configure AI providers (optional):
-
+**To update existing installation:**
 ```bash
-# For Anthropic Claude (recommended for best analysis)
-echo "ANTHROPIC_API_KEY=your_key_here" > $(brew --prefix)/opt/meetily-backend/backend/.env
+# Update Homebrew and get latest package information
+brew update
 
-# For Groq (alternative high-quality provider)
-echo "GROQ_API_KEY=your_key_here" >> $(brew --prefix)/opt/meetily-backend/backend/.env
-
-# For OpenAI (GPT models)
-echo "OPENAI_API_KEY=your_key_here" >> $(brew --prefix)/opt/meetily-backend/backend/.env
+# Update to latest version
+brew upgrade --cask meetily
+brew upgrade meetily-backend
 ```
+
 
 ## Usage
 
